@@ -1,13 +1,158 @@
+/* src/site/styles/custom-style.scss */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+  /* Main font change to Inter */
+  --font-default: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-text: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-interface: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Improve code readability */
+  --font-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  
+  /* Better line heights and spacing */
+  --line-height-normal: 1.6;
+  --line-height-tight: 1.4;
+  
+  /* Adjust content width slightly */
+  --file-line-width: 740px;
+  
+  font-family: 'Inter', sans-serif;
+  color: #e2e2e2;
+}
+
+/* Header styling */
+.navbar {
+  padding: 1rem var(--file-margins);
+  backdrop-filter: blur(10px);
+  background-color: rgba(32, 31, 31, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+  h1 {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+}
+
+/* Enhance content area */
+.content {
+  max-width: 740px;
+  line-height: 1.6;
+  font-size: 16px;
+  
+  /* Add some space below the navbar */
+  margin-top: 100px;
+}
+
+/* Improve headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.3em;
+}
+
+/* Enhance code blocks */
+pre {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 8px !important;
+  padding: 1em !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+code {
+  font-family: var(--font-monospace);
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Better callouts */
+.callout {
+  border-radius: 8px;
+  margin: 1.5em 0;
+  transition: box-shadow 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Improve tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  
+  th {
+    font-weight: 600;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  th, td {
+    padding: 0.75em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+}
+
+/* Better links */
+a {
+  color: #61baF5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: lighten(#61baF5, 15%);
+    text-decoration: underline;
+  }
+}
+
+/* Sidebar improvements */
+.sidebar {
+  background-color: rgba(32, 31, 31, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+  
+  .toc, .backlinks {
+    border-radius: 8px;
+    padding: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Better lists for technical documentation */
+ul, ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
+  
+  li {
+    margin: 0.5em 0;
+  }
+}
+
+/* Improve blockquotes */
+blockquote {
+  border-left: 4px solid #61baF5;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  background-color: rgba(97, 186, 245, 0.1);
+  font-style: italic;
 }
