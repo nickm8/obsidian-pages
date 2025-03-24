@@ -5,7 +5,7 @@
 
 # Guides
 
-Welcome to my guides collection! Here you'll find various tutorials and how-to articles.
+My goal to release at least one guide per fortnight, on various tech and AI topics.
 
 ## Categories
 
