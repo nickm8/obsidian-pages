@@ -3,21 +3,14 @@
 ---
 
 
-
 My goal to release at least one guide per fortnight, on various tech and AI topics.
 
-## Categories
 ## Categories
 
 - [[guides/programming/Programming Guides\|Programming Guides]]
 - [[guides/design/Design Guides\|Design Guides]]
 - [[guides/productivity/Productivity Guides\|Productivity Guides]]
-- [[guides/ai/AI Guides\|AI Guides]]## Recent Guides
-
-- [[guides/how-to-use-digital-garden\|How to Use a Digital Garden]]
-- [[guides/markdown-basics\|Markdown Basics]]
-
-
+- [[guides/ai/AI Guides\|AI Guides]]
 
 ## Recent Guides
 
