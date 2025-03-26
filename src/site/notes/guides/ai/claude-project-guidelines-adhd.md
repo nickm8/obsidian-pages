@@ -3,7 +3,7 @@
 ---
 
 
-# Claude Project Guidelines (🦋 Version)
+# Claude Projects (🦋 Version)
 
 > **Quick Navigation:** [Back to Full Guide](/guides/ai/claude-project-guidelines)
 
